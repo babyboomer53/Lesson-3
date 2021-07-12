@@ -143,29 +143,29 @@ public class Homework3 {
 
     static class CompareCarsByMakeThenModel implements Comparator<Car> {
         @Override
-        public int compare(Car thisCar, Car anotherCar) {
-            if (thisCar.getMake().compareTo(anotherCar.getMake()) != 0) {
-                return thisCar.getMake().compareTo(anotherCar.getMake());
+        public int compare(Car thisCar, Car thatCar) {
+            if (thisCar.getMake().compareTo(thatCar.getMake()) != 0) {
+                return thisCar.getMake().compareTo(thatCar.getMake());
             } else {
-                return thisCar.getModel().compareTo(anotherCar.getModel());
+                return thisCar.getModel().compareTo(thatCar.getModel());
             }
         }
     }
 
     static class CompareCarsByDescendingMPG implements Comparator<Car> {
         @Override
-        public int compare(Car thisCar, Car anotherCar) {
-            return -Integer.compare(thisCar.getMpg(), anotherCar.getMpg());
+        public int compare(Car thisCar, Car thatCar) {
+            return -Integer.compare(thisCar.getMpg(), thatCar.getMpg());
         }
     }
 
     static class CompareCarsByMakeThenDescendingMPG implements Comparator<Car> {
         @Override
-        public int compare(Car thisCar, Car anotherCar) {
-            if (thisCar.getMake().compareTo(anotherCar.getMake()) != 0) {
-                return thisCar.getMake().compareTo(anotherCar.getMake());
+        public int compare(Car thisCar, Car thatCar) {
+            if (thisCar.getMake().compareTo(thatCar.getMake()) != 0) {
+                return thisCar.getMake().compareTo(thatCar.getMake());
             } else {
-                return new CompareCarsByDescendingMPG().compare(thisCar, anotherCar);
+                return new CompareCarsByDescendingMPG().compare(thisCar, thatCar);
             }
         }
     }
