@@ -28,13 +28,13 @@ public class Homework3Test {
     }
 
     @Test
-    public void testTheToStringMethodOfTheCarClass() {
+    public void toStringMethodOfTheCarClass() {
         Homework3.Car car = new Homework3.Car("Toyota", "RAV4", 26);
         assertEquals(car.toString(), "Car{make='Toyota', model='RAV4', mpg=26}");
     }
 
     @Test
-    public void testQuickSortWithMakeThenModelComparator() {
+    public void quickSortWithCompareCarsByMakeThenModel() {
         Homework3.QuickSort.quickSort(cars, new Homework3.CompareCarsByMakeThenModel());
         // After sorting, I'm checking only the first and last elements.
         assertEquals(cars[0].getModel(), "Focus");
@@ -42,7 +42,7 @@ public class Homework3Test {
     }
 
     @Test
-    public void testQuicksortWithDescendingMPGComparator() {
+    public void quickSortWithCompareCarsByDescendingMPG() {
         Homework3.QuickSort.quickSort(cars, new Homework3.CompareCarsByDescendingMPG());
         // After sorting, I'm checking only the first and last elements.
         assertEquals(cars[0].getModel(), "Prius");
@@ -50,7 +50,7 @@ public class Homework3Test {
     }
 
     @Test
-    public void testQuickSortWithMakeThenDescendingMPGComparator() {
+    public void quickSortWithCompareCarsByMakeThenDescendingMPG() {
         Homework3.QuickSort.quickSort(cars, new Homework3.CompareCarsByMakeThenDescendingMPG());
         // After sorting, I'm checking only the first and last elements.
         assertEquals(cars[0].getModel(), "Focus");
