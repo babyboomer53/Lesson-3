@@ -36,23 +36,23 @@ public class Homework3Test {
     @Test
     public void testQuickSortWithMakeThenModelComparator() {
         Homework3.QuickSort.quickSort(cars, new Homework3.CompareCarsByMakeThenModel());
-        // After sorting, I'm just checking to ensure that the first and last objects are what I'm expecting.
+        // After sorting, I'm checking only the first and last elements.
         assertEquals(cars[0].getModel(), "Focus");
         assertEquals(cars[cars.length - 1].getModel(), "Prius");
     }
 
     @Test
-    public void testQuicksortWithDescendingMPG() {
+    public void testQuicksortWithDescendingMPGComparator() {
         Homework3.QuickSort.quickSort(cars, new Homework3.CompareCarsByDescendingMPG());
-        // After sorting, I'm just checking to ensure that the first and last objects are what I'm expecting.
+        // After sorting, I'm checking only the first and last elements.
         assertEquals(cars[0].getModel(), "Prius");
         assertEquals(cars[cars.length - 1].getModel(), "Taurus");
     }
 
     @Test
-    public void testQuickSortWithMakeThenDescendingMPG() {
+    public void testQuickSortWithMakeThenDescendingMPGComparator() {
         Homework3.QuickSort.quickSort(cars, new Homework3.CompareCarsByMakeThenDescendingMPG());
-        // After sorting, I'm just checking to ensure that the first and last objects are what I'm expecting.
+        // After sorting, I'm checking only the first and last elements.
         assertEquals(cars[0].getModel(), "Focus");
         assertEquals(cars[cars.length - 1].getModel(), "Camry");
     }

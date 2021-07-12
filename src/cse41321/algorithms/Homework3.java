@@ -155,7 +155,8 @@ public class Homework3 {
     static class CompareCarsByDescendingMPG implements Comparator<Car> {
         @Override
         public int compare(Car thisCar, Car thatCar) {
-            return -Integer.compare(thisCar.getMpg(), thatCar.getMpg());
+            // Return the (additive) inverse of the value returned by the compare method.
+            return -(Integer.compare(thisCar.getMpg(), thatCar.getMpg()));
         }
     }
 
