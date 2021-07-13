@@ -142,6 +142,11 @@ public class Homework3 {
 
 
     static class CompareCarsByMakeThenModel implements Comparator<Car> {
+        /**
+         * @param thisCar
+         * @param thatCar
+         * @return
+         */
         @Override
         public int compare(Car thisCar, Car thatCar) {
             if (thisCar.getMake().compareTo(thatCar.getMake()) != 0) {
@@ -153,14 +158,27 @@ public class Homework3 {
     }
 
     static class CompareCarsByDescendingMPG implements Comparator<Car> {
+        /**
+         * @param thisCar
+         * @param thatCar
+         * @return
+         */
         @Override
         public int compare(Car thisCar, Car thatCar) {
-            // Return the (additive) inverse of the value returned by the compare method.
+            // The following statement returns the (additive) inverse of the value produced by the compare method.
             return -(Integer.compare(thisCar.getMpg(), thatCar.getMpg()));
+            // I'm not sure why I spent so much time scrounging for an inverse function,
+            // when a simple hyphen will suffice.
         }
     }
 
     static class CompareCarsByMakeThenDescendingMPG implements Comparator<Car> {
+        /**
+         *
+         * @param thisCar
+         * @param thatCar
+         * @return
+         */
         @Override
         public int compare(Car thisCar, Car thatCar) {
             if (thisCar.getMake().compareTo(thatCar.getMake()) != 0) {
