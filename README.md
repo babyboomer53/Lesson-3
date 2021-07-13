@@ -9,7 +9,7 @@ The quicksort algorithm accepts two arguments. The first argument to the quickso
 
 This program includes three implementations of the Comparator interface. The first Comparator, *CompareCarsByMakeThenModel*, arranges Car objects in the list first by make, and then within each make, by model. So, an original list of vehicles like this:
 
-```
+```plaintext
 Car{make='Toyota', model='Camry', mpg=33}
 Car{make='Ford', model='Focus', mpg=40}
 Car{make='Honda', model='Accord', mpg=34}
@@ -21,7 +21,7 @@ Car{make='Toyota', model='Corolla', mpg=35}
 Car{make='Ford', model='Taurus', mpg=28}
 ```
 … after sorting, would look like this:
-```
+```plaintext
 Car{make='Ford', model='Focus', mpg=40}
 Car{make='Ford', model='Mustang', mpg=31}
 Car{make='Ford', model='Taurus', mpg=28}
@@ -32,9 +32,8 @@ Car{make='Toyota', model='Camry', mpg=33}
 Car{make='Toyota', model='Corolla', mpg=35}
 Car{make='Toyota', model='Prius', mpg=48}
 ```
-
 The next Comparator, *CompareCarsByDescendingMPG*, arranges Car objects in the array in descending order by EPA rating (i.e., average MPG) – regardless of make or model. So, an array containing Car objects in the following order…
-```
+```plaintext
 Car{make='Toyota', model='Camry', mpg=33}
 Car{make='Ford', model='Focus', mpg=40}
 Car{make='Honda', model='Accord', mpg=34}
@@ -47,7 +46,7 @@ Car{make='Ford', model='Taurus', mpg=28}
 ```
 … after sorting, would look like this:
 
-```
+```plaintext
 Car{make='Toyota', model='Prius', mpg=48}
 Car{make='Ford', model='Focus', mpg=40}
 Car{make='Honda', model='Civic', mpg=39}
@@ -59,7 +58,7 @@ Car{make='Ford', model='Mustang', mpg=31}
 Car{make='Ford', model='Taurus', mpg=28}
 ```
 The third Comparator, *CompareCarsByMakeThenDescendingMPG*, arranges car objects in the array first by make and then by EPA rating. So, an original list like this:
-```
+```plaintext
 Car{make='Toyota', model='Camry', mpg=33}
 Car{make='Ford', model='Focus', mpg=40}
 Car{make='Honda', model='Accord', mpg=34}
@@ -71,7 +70,7 @@ Car{make='Toyota', model='Corolla', mpg=35}
 Car{make='Ford', model='Taurus', mpg=28}
 ```
 … after sorting, would look like this:
-```
+```plaintext
 Car{make='Ford', model='Focus', mpg=40}
 Car{make='Ford', model='Mustang', mpg=31}
 Car{make='Ford', model='Taurus', mpg=28}
@@ -444,4 +443,4 @@ I've discovered that from within the Markdown Monster editor, I can save the ren
 
 I've been creating README files for only the last couple of classes, so it's still a work in progress. Consequently, the layout is something that will continue to evolve.
 
-Preparing README files takes so much time that I seldom proofread them. I apologize for any errors or omissions.
+Preparing README files takes so much time that I seldom proofread them. I apologize for any errors or omissions. With time, I'm sure I'll get faster.
